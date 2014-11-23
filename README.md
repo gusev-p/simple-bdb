@@ -4,7 +4,7 @@ simple-bdb
 Simple and fast C# driver for BerkleyDBs
 
 What's wrong with official Oracle .NET driver ?
-===============================================
+-----------------------------------------------
 
 Performance. Oracle C# driver is generated from C code
 using http://www.swig.org/ tool. While pretty good in
@@ -30,5 +30,5 @@ Api
 ===
 
 Keywords
-=========
+--------
 Oracle, bdb, BerkleyDb, .NET, C#, BerkleyDb Driver
