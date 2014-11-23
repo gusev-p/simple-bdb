@@ -1,0 +1,23 @@
+﻿how to build BerkleyDb
+======================
+
+	Download sources from http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/downloads/index.html
+	Page requires registration with email/password.
+
+	Open solution build_windows\Berkeley_DB_vs2010.sln using any VS, older 2010, agree with project convertion.
+
+	Go to project settings db -> C/C++ -> Code Generation and change "Runtime Library" to
+		"Multi-threaded DLL" at configuration "Static Release"
+		"Multi-threaded Debug DLL" at configuration "Static Debug"
+
+	Adjust .pdb file name and folder (db -> C/C++ -> Output Files -> Program Database File Name)
+		* For configuration "Static Release" - $(OutDir)lib$(ProjectName)$(BDB_VERSION)s.pdb
+		* For configuration "Static Debug" - $(OutDir)lib$(ProjectName)$(BDB_VERSION)sd.pdb
+
+	Build porject "db" using configurations "Debug/x64" and "Release/x64", must receive the following files
+		build_windows\x64\Static Release\libdb61s.lib
+		build_windows\x64\Static Release\libdb61s.pdb
+		build_windows\x64\Static Debug\libdb61sd.lib
+		build_windows\x64\Static Debug\libdb61sd.pdb
+
+	Copy these file and db.h to this folder

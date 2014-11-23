@@ -1,0 +1,9 @@
+_Src/Driver/x64/
+*bin/
+*obj/
+_Src/Driver/Driver.vcxproj.filters
+*.ipch
+*.suo
+*.user
+_Src/SimpleBdb.sdf
+_Src/SimpleBdb.opensdf
