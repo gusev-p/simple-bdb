@@ -15,16 +15,17 @@ arrays between unmanaged and managed memory.
 
 Features
 ========
-	Written in C++/CLI thereby reducing overhead of each individual pinvoke.
+* Written in C++/CLI thereby reducing overhead of each individual pinvoke.
 
-	Fetch api allows to retrieve chunk of data from unmanaged memory in one call
-	futher reducing the number of pinvokes.
+* Fetch api allows to retrieve chunk of data from unmanaged memory in one call
+futher reducing the number of pinvokes.
 
-	Range-union fetch allows to query by first part of composite key
-	with ordering by second part.
+* Range-union fetch allows to query by first part of composite key
+with ordering by second part.
 
-	Cursor api can be used to iterate over large data sets with no
-	redundant byte array coping.
+* Cursor api can be used to iterate over large data sets with no
+redundant byte array copying.
+
 Api
 ===
 
