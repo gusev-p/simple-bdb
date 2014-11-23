@@ -14,7 +14,7 @@ which are costly. Other source of overhead is copying of byte
 arrays between unmanaged and managed memory.
 
 Features
-========
+--------
 * Written in C++/CLI thereby reducing overhead of each individual pinvoke.
 
 * Fetch api allows to retrieve chunk of data from unmanaged memory in one call
@@ -27,8 +27,8 @@ with ordering by second part.
 redundant byte array copying.
 
 Api
-===
+---
 
 Keywords
 --------
-Oracle, bdb, BerkleyDb, .NET, C#, BerkleyDb Driver
+Oracle, bdb, BerkleyDb, .NET, C#, BerkleyDb Driver, BerkleyDb .NET, C++/CLI
